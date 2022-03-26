@@ -233,6 +233,15 @@ namespace OptLib
 	{
 		o << "{ " << r.P << ' ' << r.Val << " }"; return o;
 	}
+	template <int dim>
+	double dist(const PointVal<dim>& p1, const PointVal<dim>& p2)
+	{
+		double res = 0.0;
+		for (int i = 0; i < dim; i++)
+			res += (p2[i] - p1[i]) * (p2[i] - p1[i]);
+
+		return std::sqrt(res);
+	}
 
 	/// <summary>
 	/// coefficient of variation, mean/variance
