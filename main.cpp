@@ -32,7 +32,6 @@ int main()
 	OptLib::UnitTests::testOptimizer::testOverallOptimizer_WithBicection(); 
 
 	//testOptimizer::testOptimizer_();
-	//kkk
 
 	// reset to previous version
 
